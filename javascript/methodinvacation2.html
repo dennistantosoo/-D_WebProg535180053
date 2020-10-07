@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title> Java Script Invocation Pattern</title
+
+<script>
+
+var Person={
+
+Email:" ",
+
+NIM:" ",
+
+Nama:" ",
+
+Hobbies: [],
+
+AddBio: function (pEmail, pNIM, pNama) { // Method
+this.Email = pEmail;
+this.NIM = pNIM;
+this.Nama = pNama,
+},
+AddHobby: function (pHobby){// Method
+this.Hobbies . push (pHobby) ;
+},
+Write: function () {//Method
+
+var str = "Bio: " + this.Email + ", " + this.NIM +", " + this.Nama;
+var hobb ="Hobbies:
+
+var 1tem,
+
+for (item of this.Hobbies) {
+
+hobb+ item + "s
+
+return str + + hobb;
+}
+</script
+
+</head>
+
+<body>
+
+<input type- "text" id="iEmail" placeholder="Masukkan Email" /
+<input type="text id-" iNIN placeholder="Masukkan NIM /
+<input type="text" id="iName" placeholder = "Masukkan Nama" />
+
+<button type="button"
+
+onclick='AddBio Info (document.getElementById ("iEmail ") . value,
+document.getElement By Id ("iNIM"). value,
+document. getElementById ("iName "). value) '>Add
+
+Bio Info</button>
+
+<br><
+
+<input type="text" id="iHobby" placeholder="Add your hobby" style="width: 50epx; ">
+<button type="button" onclick='Person.AddHobby (document.getElementBy Id ("iHobby").value) " >Add</button>
+k--Person. AddHobby) adalah Method Invocation--
+
+<br><br
+
+<button type="button" onclick='Loadobject() "> Load</button>
+
+<br><br>
+
+<div id="oResult"> </div>
+
+/body>
+
+</html>

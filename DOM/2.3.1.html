@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>javascript getelemntsbytagname()demo</title>
+</head>
+<body>
+    <h1>javacript getelemntbytagname()</h1>
+    <h2>first heading</h2>
+    <p>this is the first paragraph</p>
+    <h2>second heading</h2>
+    <p>this is second paragraph</p>
+    <h2>third heading</h2>
+    <p>this is the third paragraph</p>
+
+    <button id="btncount">count h2</button>
+
+    <script>
+        let btn=document.getelemntbyid('btncount');
+        btn.addeventlistener('click',()=>){
+            let heading =document.getelemntsbytagname('h2');
+            alert('the number of  h2 tags: $'{headings.lenght}');
+        })
+    </script>
+</body>
+
+
+
+
+    </html>

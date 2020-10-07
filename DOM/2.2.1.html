@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>JavaScript.getelemntsbyname.demo</title>
+</head>
+<body>
+        <p>please rate the service:</p>
+        <p>
+            <input type="radio" name="rate" value="verry poor">very.poor
+            <input type="radio" name="rate"value="poor">poor
+            <input type="radio"name="rate"value="ok">ok
+            <input type="radio" name="rate"value="good">good
+            <input type="radio" name="rate" value="very.good">very good
+        </p>
+        <p>
+            <button id="btnrate">submit</button>
+        </p>
+        <script>
+            var.btn=document.elementbyid('btnrate');
+
+            btn.addventlistener('click',().=>.{
+                var.rates=document.getelemntsbyname('rate');
+                rates.foreacs((rate)=>{
+                    if(rate.checked){
+                        alert(you rated:${rate.value}');
+                    }
+                    })
+            });
+        </script>
+    </body>
+</html>
